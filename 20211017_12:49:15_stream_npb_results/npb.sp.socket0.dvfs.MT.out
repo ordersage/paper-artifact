@@ -1,0 +1,79 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OMP) - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:   64x  64x  64
+ Iterations:  400    dt:    0.0015000
+ Number of available threads:    20
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class A
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.2479982239930E+01 0.2479982239930E+01 0.4011157072206E-13
+           2 0.1127633796437E+01 0.1127633796437E+01 0.9884981456265E-13
+           3 0.1502897788877E+01 0.1502897788877E+01 0.4225487420273E-13
+           4 0.1421781621170E+01 0.1421781621170E+01 0.7917996197221E-13
+           5 0.2129211303514E+01 0.2129211303514E+01 0.3921112541251E-13
+ Comparison of RMS-norms of solution error
+           1 0.1090014029782E-03 0.1090014029782E-03 0.4228582715307E-12
+           2 0.3734395176929E-04 0.3734395176928E-04 0.1233897060903E-12
+           3 0.5009278540654E-04 0.5009278540654E-04 0.1717982874033E-13
+           4 0.4767109393954E-04 0.4767109393953E-04 0.2331197241262E-12
+           5 0.1362161339921E-03 0.1362161339921E-03 0.5193525148700E-13
+ Verification Successful
+
+
+ SP Benchmark Completed.
+ Class           =                        A
+ Size            =             64x  64x  64
+ Iterations      =                      400
+ Time in seconds =                     4.50
+ Total threads   =                       20
+ Avail threads   =                       20
+ Mop/s total     =                 18882.18
+ Mop/s/thread    =                   944.11
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              17 Oct 2021
+
+ Compile options:
+    F77          = f77
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+testname,class,size,iterations,exec_time,total_threads,avail_threads,mops_total,mops_per_thread,operation_type,verification,version,compile_date,compiler,linker,lib,inc,flags,linkflags,rand
+SP,A,  64x  64x  64,         400,       4.502,          20,          20,   18882.182,     944.109,          floating point,  SUCCESSFUL,3.3.1,17 Oct 2021,f77,$(F77),(none),(none),-O3 -fopenmp,-O3 -fopenmp,(none)

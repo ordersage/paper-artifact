@@ -1,0 +1,4 @@
+test_command,coeff_of_variation_fixed,coeff_of_variation_random,KW_dist_type,Normal_fixed,Normal_random,SW_test_stat_fixed,SW_p-value_fixed,SW_test_stat_random,SW_p-value_random,KW_test_stat,KW_p-value,percent_diff,KW_effect_size,fixed_pth_quantile,fixed_ci_low,fixed_ci_high,random_pth_quantile,random_ci_low,random_ci_high,ci_case,inner_diff
+./is.D.sh,0.082,0.08,same,FALSE,FALSE,0.952355087,0.0011897,0.95126003,0.001005239,0.048358717,0.825944243,0.292000394,0.000243009,36.49,35.2,37.24,35.985,35.55,37,2,
+./npBench-spmv.sh,0.048,0.052,same,FALSE,FALSE,0.946502149,0.000491574,0.907279611,3.16E-06,0.153821726,0.69490961,-0.604232945,0.000772973,905,897,916,906.5,901,916,2,
+./npBench-softmax.sh,0.014,0.014,different,FALSE,TRUE,0.970407248,0.023751957,0.980704486,0.150784343,4.757889936,0.02916428,0.456844948,0.023908995,1487,1481,1495,1479.5,1475,1485,3,

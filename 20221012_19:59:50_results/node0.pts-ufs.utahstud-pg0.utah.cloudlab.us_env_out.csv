@@ -1,0 +1,2 @@
+timestamp,nodeid,nodeuuid,arch,ver_hash,gcc_ver,total_mem,mem_clock_speed,nthreads,nsockets,cpu_model,kernel_release,os_release
+1665626661,amd254,31422eec-9321-11eb-9d70-030bf32e1a35,x86_64,a0e70960980a48e3470e6a612c76c5c57b420190,10.3.0,128GB,MHz,48,1,AMD EPYC 7402P 24-Core Processor,5.4.0-100-generic,Ubuntu 20.04 LTS (Focal Fossa)

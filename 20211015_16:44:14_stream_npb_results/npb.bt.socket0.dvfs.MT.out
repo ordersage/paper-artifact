@@ -1,0 +1,69 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:   64x  64x  64
+ Iterations:  200       dt:   0.0008000
+ Number of available threads:    20
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class A
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.1080634671464E+03 0.1080634671464E+03 0.7495768367948E-14
+           2 0.1131973090122E+02 0.1131973090122E+02 0.9415542762816E-15
+           3 0.2597435451158E+02 0.2597435451158E+02 0.2598777184900E-14
+           4 0.2366562254468E+02 0.2366562254468E+02 0.8106549417537E-14
+           5 0.2527896321175E+03 0.2527896321175E+03 0.1349187109883E-13
+ Comparison of RMS-norms of solution error
+           1 0.4234841604053E+01 0.4234841604053E+01 0.0000000000000E+00
+           2 0.4439028249700E+00 0.4439028249700E+00 0.6502729204800E-14
+           3 0.9669248013635E+00 0.9669248013635E+00 0.9185599732758E-15
+           4 0.8830206303977E+00 0.8830206303977E+00 0.1257301343147E-14
+           5 0.9737990177083E+01 0.9737990177083E+01 0.4195548215109E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        A
+ Size            =             64x  64x  64
+ Iterations      =                      200
+ Time in seconds =                     6.85
+ Total threads   =                       20
+ Avail threads   =                       20
+ Mop/s total     =                 24584.81
+ Mop/s/thread    =                  1229.24
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              15 Oct 2021
+
+ Compile options:
+    F77          = f77
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+testname,class,size,iterations,exec_time,total_threads,avail_threads,mops_total,mops_per_thread,operation_type,verification,version,compile_date,compiler,linker,lib,inc,flags,linkflags,rand
+BT,A,  64x  64x  64,         200,       6.845,          20,          20,   24584.809,    1229.240,          floating point,  SUCCESSFUL,3.3.1,15 Oct 2021,f77,$(F77),(none),(none),-O3 -fopenmp,-O3 -fopenmp,(none)

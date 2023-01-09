@@ -1,0 +1,2 @@
+testname,class,size,iterations,exec_time,total_threads,avail_threads,mops_total,mops_per_thread,operation_type,verification,version,compile_date,compiler,linker,lib,inc,flags,linkflags,rand,run_uuid,timestamp,nodeid,nodeuuid,socket_num,dvfs
+EP,B,2147483648,0,1.944,20,20,1104.785,55.239,Random numbers generated,SUCCESSFUL,3.3.1,15 Oct 2021,f77,$(F77),(none),(none),-O3 -fopenmp,-O3 -fopenmp,randi8,200,,hp065,fc15a3fa-0e73-11e8-bb5e-810a69dd7768,0,yes

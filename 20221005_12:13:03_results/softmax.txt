@@ -1,0 +1,2 @@
+***** Testing NumPy with softmax on the L dataset *****
+NumPy - default - median: 1455ms

@@ -1,0 +1,2 @@
+timestamp,nodeid,nodeuuid,arch,ver_hash,gcc_ver,total_mem,mem_clock_speed,nthreads,nsockets,cpu_model,kernel_release,os_release
+1634245847,hp065,fc15a3fa-0e73-11e8-bb5e-810a69dd7768,x86_64,e265e19f4d2d2bb2060644a6e7728b89606bcc2d,9.3.0,64GB,MHz,20,1,Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz,5.4.0-88-generic,Ubuntu 20.04 LTS (Focal Fossa)

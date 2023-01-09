@@ -1,0 +1,2 @@
+***** Testing NumPy with spmv on the L dataset *****
+NumPy - default - median: 936ms

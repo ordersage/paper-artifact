@@ -1,0 +1,58 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OMP) - EP Benchmark
+
+ Number of random numbers generated:      2147483648
+ Number of available threads:                     20
+
+EP Benchmark Results:
+
+CPU Time =    1.9740
+N = 2^   30
+No. Gaussian Pairs =     843345606.
+Sums =     4.033815542442090D+04   -2.660669192811295D+04
+Counts:
+  0     393058470.
+  1     375280898.
+  2      70460742.
+  3       4438852.
+  4        105691.
+  5           948.
+  6             5.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        B
+ Size            =               2147483648
+ Iterations      =                        0
+ Time in seconds =                     1.97
+ Total threads   =                       20
+ Avail threads   =                       20
+ Mop/s total     =                  1087.87
+ Mop/s/thread    =                    54.39
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              14 Oct 2021
+
+ Compile options:
+    F77          = f77
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+testname,class,size,iterations,exec_time,total_threads,avail_threads,mops_total,mops_per_thread,operation_type,verification,version,compile_date,compiler,linker,lib,inc,flags,linkflags,rand
+EP,B,    2147483648,           0,       1.974,          20,          20,    1087.872,      54.394,Random numbers generated,  SUCCESSFUL,3.3.1,14 Oct 2021,f77,$(F77),(none),(none),-O3 -fopenmp,-O3 -fopenmp,randi8

@@ -1,0 +1,2 @@
+run_uuid,timestamp,nodeid,nodeuuid,socket_num,dvfs,omp_nthreads_used,units,copy_omp_max,copy_omp_min,copy_omp_mean,copy_omp_stdev,scale_omp_max,scale_omp_min,scale_omp_mean,scale_omp_stdev,add_omp_max,add_omp_min,add_omp_mean,add_omp_stdev,triad_omp_max,triad_omp_min,triad_omp_mean,triad_omp_stdev
+200,100,hp065,fc15a3fa-0e73-11e8-bb5e-810a69dd7768,0,yes,20,MB/s,34082.19,33332.18,33876.28,129.48,34011.54,33444.98,33797.50,121.77,38340.44,37590.75,38044.60,128.21,38447.95,37603.15,38125.66,142.27
