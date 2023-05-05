@@ -19,7 +19,8 @@ pc = portal.Context()
 
 # TODO: make these options
 WORKER_HWTYPE = "xl170"
-DISKIMAGE = " 	urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD"
+DISKIMAGE = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD"
+SCRIPT = "/local/repository/install-deps.sh"
 
 # Create a Request object to start building the RSpec.
 request = pc.makeRequestRSpec()
@@ -40,6 +41,11 @@ worker.disk_image = controller.disk_image = DISKIMAGE
 # Set up passwordless root ssh between the controller and worker
 controller.installRootKeys(private = True, public = False)
 worker.installRootKeys(private = False, public = True)
+
+# Update both nodes and install dependencies
+controller.addService(pg.Execute(shell="sh", command=SCRIPT))
+worker.addService(pg.Execute(shell="sh", command=SCRIPT))
+
 
 # Print the RSpec to the enclosing page.
 pc.printRequestRSpec(request)
