@@ -19,7 +19,7 @@ pc = portal.Context()
 
 # TODO: make these options
 WORKER_HWTYPE = "xl170"
-DISKIMAGE = " 	urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD:13"
+DISKIMAGE = " 	urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD"
 
 # Create a Request object to start building the RSpec.
 request = pc.makeRequestRSpec()
