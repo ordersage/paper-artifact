@@ -28,7 +28,7 @@ request = pc.makeRequestRSpec()
 controller = request.RawPC("contoller")
 
 # ... and this one will be used as the worker
-worker = request.RawPC("contoller")
+worker = request.RawPC("worker")
 
 # The worker is allowed to be any type of PC, but for the paper, we use a specific type for the
 # worker
