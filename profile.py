@@ -15,10 +15,7 @@ import geni.rspec.emulab
 # Create a portal context.
 pc = portal.Context()
 
-# Pin a specific version of a disk image so that we get the same no each time
-DISKIMAGE = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD:12"
-
-# Script that installs dependencies, etc.
+DISKIMAGE = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD"
 SCRIPT = "/local/repository/install-deps.sh"
 
 # We force both nodes to be at Utah in this profile; the worker node types
@@ -26,7 +23,7 @@ SCRIPT = "/local/repository/install-deps.sh"
 CM_ID = "urn:publicid:IDN+utah.cloudlab.us+authority+cm" 
 
 pc.defineParameter("hwtype","Worker hardware type",
-                   portal.ParameterType.NODETYPE, "xl170",["xl170","c6525-100g"],
+                   portal.ParameterType.STRING, "xl170",["xl170","c6525-100g"],
                    longDescription="Use the default value for Table 3 and 4; use '6525-100g' for Table 5 (the uFS experiment) to get special hardware that it requires")
 
 params = pc.bindParameters();
