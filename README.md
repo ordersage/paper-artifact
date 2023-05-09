@@ -5,6 +5,28 @@ et al. at ATC '23. Some code and data are contained in other repositories,
 linked here; the purpose of this document is to collect all information for
 evaluating the artifacts in one place. 
 
+## Getting Started
+
+We offer data that can be directly checked against that reported in the paper,
+as well as instructions for running the Case Studies reported in the paper.
+
+Checking the numbers is generally simple, and can be done by examining data
+presented in this repository and examining a Jupyter notebook that we provide.
+This Jupyter nodebook can be re-executed either by using the evaluator's own
+installation of Jupyter or by running it using a link we provide to Google
+Collab, which only requires a Google account.
+
+Re-executing the Case Study experiments is considerably more involved. The
+preferred way to do this is to have a CloudLab account; we provide a profile on
+CloudLab that automates the set up of the experiment, and running on the same
+hardware used for the paper is likely to reproduce the same ordering effects.
+
+It can take a few days for CloudLab accounts to be approved, and each of the
+three Case Studies can take a day or more to run, so we **encourage evaluators to
+leave plenty of time**.
+
+CloudLab is free for academic use, and can be found at https://cloudlab.us 
+
 ## Data, Code, And Other Artifacts Used in This Document
 
 This README refers to code, data, and other resources located in several
@@ -25,9 +47,6 @@ This dataset was collected over a period of more than nine months on CloudLab, a
 ## Reproducing The Paper
 
 This section is organized according to the figures and tables in the paper.
-
-We offer multiple levels of verification, please see each section below for 
-requirements for verifying each.
 
 
 ### Table 1:
