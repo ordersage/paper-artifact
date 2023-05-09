@@ -1,11 +1,9 @@
-"""
-This profile is to be used to run OrderSage, a tool for detecting and mitigating ordering effects in systems performance experiment.
+"""This profile is to be used to run OrderSage, a tool for detecting and mitigating ordering effects in systems performance experiment.
 
 It is specifically set up to help the user run experiments from the paper "Avoiding the Ordering Trap in Systems Performance Measurement" by Duplyakin et. al in USENIX ATC 20203
 
 Instructions:
-TBD
-"""
+TBD"""
 
 # Import the Portal object.
 import geni.portal as portal
@@ -17,10 +15,21 @@ import geni.rspec.emulab
 # Create a portal context.
 pc = portal.Context()
 
-# TODO: make these options
-WORKER_HWTYPE = "xl170"
-DISKIMAGE = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD"
+# Pin a specific version of a disk image so that we get the same no each time
+DISKIMAGE = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD:12"
+
+# Script that installs dependencies, etc.
 SCRIPT = "/local/repository/install-deps.sh"
+
+# We force both nodes to be at Utah in this profile; the worker node types
+# require that site, so we make sure the controller is there too 
+CM_ID = "urn:publicid:IDN+utah.cloudlab.us+authority+cm" 
+
+pc.defineParameter("hwtype","Worker hardware type",
+                   portal.ParameterType.NODETYPE, "xl170",["xl170","c6525-100g"],
+                   longDescription="Use the default value for Table 3 and 4; use '6525-100g' for Table 5 (the uFS experiment) to get special hardware that it requires")
+
+params = pc.bindParameters();
 
 # Create a Request object to start building the RSpec.
 request = pc.makeRequestRSpec()
@@ -33,7 +42,11 @@ worker = request.RawPC("worker")
 
 # The worker is allowed to be any type of PC, but for the paper, we use a specific type for the
 # worker
-worker.hardware_type = WORKER_HWTYPE
+worker.hardware_type = params.hwtype;
+
+# Force both nodes to be at Utah
+controller.component_manager_id = CM_ID
+worker.component_manager_id = CM_ID
 
 # Use a specific disk image that is known to work with the required software
 worker.disk_image = controller.disk_image = DISKIMAGE
