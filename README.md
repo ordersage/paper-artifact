@@ -125,7 +125,7 @@ motivator for the paper was that different hardware, software, etc. can have
 different ordering effects.
 
 You will need to set up OrderSage and its dependencies (including passwordless
-ssh to the worker) as described in its repository (https://XXX). Use the
+ssh to the worker) as described in its repository: [https://github.com/ordersage/ordersage](https://github.com/ordersage/ordersage). Use the
 OrderSage configuration files as described in the CloudLab section above, and
 interpret results as described in the "checking against our data" section
 above.
