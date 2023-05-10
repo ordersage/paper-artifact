@@ -158,9 +158,15 @@ To run experiments for each table, you will:
 
 Special instructions for:
 
-* Table 3: When instantiating the profile, leave the value for "Worker hardware type" at its default (`xl170`) 
-* Table 4: When instantiating the profile, leave the value for "Worker hardware type" at its default (`xl170`) 
-* Table 5: When instantiating the profile, *change* the value for "Worker hardware type" to `6525-100g`, because this experiment requires different hardware
+* Table 3:
+  * When instantiating the profile, leave the value for "Worker hardware type" at its default (`xl170`) 
+  * The experiment repository is https://gitlab.flux.utah.edu/gtw/memcached_testapp
+* Table 4:
+  * When instantiating the profile, leave the value for "Worker hardware type" at its default (`xl170`) 
+  * The experiment repository is https://gitlab.flux.utah.edu/hamzalsh/test-experiments
+* Table 5:
+  * When instantiating the profile, *change* the value for "Worker hardware type" to `6525-100g`, because this experiment requires different hardware
+  * The experiment repository is https://gitlab.flux.utah.edu/ptflx/ufs-test-experiments
 
 We note that you are *not* expected to get results that are *identical* to the
 ones we reported in the paper; there is enough randomness in this process that
