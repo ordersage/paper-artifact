@@ -13,8 +13,10 @@ geni-get portalmanifest | xmlstarlet sel -N x="http://www.geni.net/resources/rsp
 # configure ordersage user if necessary
 if ! passwd -S -q ordersage; then
     sudo useradd -m -u 13579 -d /home/ordersage ordersage
+    sudo mkdir /home/ordersage/.ssh
     sudo sh -c 'geni-get key > /home/ordersage/.ssh/id_rsa'
     sudo chmod 600 /home/ordersage/.ssh/id_rsa
+    sudo cp /home/ordersage/.ssh/id_rsa /local/repository/
     sudo sh -c 'ssh-keygen -e -f /home/ordersage/.ssh/id_rsa > /home/ordersage/.ssh/id_rsa.pub'
     sudo sh -c 'ssh-keygen -i -f /home/ordersage/.ssh/id_rsa.pub > /home/ordersage/.ssh/authorized_keys'
     sudo chown -R ordersage:ordersage /home/ordersage/.ssh
