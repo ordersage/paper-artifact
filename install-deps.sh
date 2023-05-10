@@ -17,6 +17,7 @@ if ! passwd -S -q ordersage; then
     sudo sh -c 'geni-get key > /home/ordersage/.ssh/id_rsa'
     sudo chmod 600 /home/ordersage/.ssh/id_rsa
     sudo cp /home/ordersage/.ssh/id_rsa /local/repository/
+    sudo chmod 644 /local/repository/id_rsa
     sudo sh -c 'ssh-keygen -e -f /home/ordersage/.ssh/id_rsa > /home/ordersage/.ssh/id_rsa.pub'
     sudo sh -c 'ssh-keygen -i -f /home/ordersage/.ssh/id_rsa.pub > /home/ordersage/.ssh/authorized_keys'
     sudo chown -R ordersage:ordersage /home/ordersage/.ssh
