@@ -94,32 +94,33 @@ re-running the experiments and collecting your own data.
 
 #### Checking against our data
 
-**Requirements: none**
+**Requirements: software to read `.csv` files**
 
 The data collected in the experiments described in Section 7 of the paper can
-be found in the XXX/ subdirectory of this repository. Each directory contains
-files describing the configuration of OrderSage, the environments gathered from
-the node(s) the experiments were run on. The data used to produce the tables
-came from:
+be found in subdirectories of this repository. Each directory contains files
+describing the configuration of OrderSage, the environments gathered from the
+node(s) the experiments were run on. The data used to produce the tables came
+from:
 
-* Test name: file XXX, column YYY
-* KW p-value: file XXX, column YYY
-* KW test: file XXX, column YYY
-* \delta %: file XXX, column YYY
-* CI case: file XXX, column YYY
+* Test name: column `test_command`
+* KW p-value: cloumn `KW_p-value`
+* KW test: column `kw_dist_type`
+* \delta %: column `percent_diff`
+* CI case: column `ci_case`
 
-Other points of interest in these directories include:
-
-* Make a
-* list of some
-* other things
-* they may find interesting
-
-Data for the tables can be found in the directories:
+Data for the tables can be found in the files:
 
 * Table 3: XXX
-* Table 4: XXX
-* Table 5: XXX
+* Table 4: `npbench_and_npb_results/20221005_12_13_03_node_stats.csv`
+* Table 5: `20221012_19:59:50_results/20221012_19:59:50_node_stats.csv`
+
+Other files of interest in the data directories include:
+
+* `*_all_env_out.csv`: information about the worker the tests were run on
+* `*_all_test_results.csv`: raw results from all individual tests
+* `*_stats_summary.csv`: summary statistics regarding normality, etc.
+
+Several other data directories are included; these were from experiments that were cut from the final paper.
 
 #### Re-running experiments on CloudLab
 
