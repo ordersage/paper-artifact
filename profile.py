@@ -6,12 +6,10 @@ Instructions:
 
 This profile creates two nodes, `controller` and `worker`. You will do all your work by logging into the controller node.
 
-A file containing the hostname of the woker node can be found as `/tmp/worker-node`
-
 To use this profile, you will want to:
 
 * `ssh` into the controller node
-* Test that ssh - as root - works from the controller node to the worker node by running ``sudo ssh `cat /tmp/worker-node` -C hostname``. Make sure to accept the host key for the worker node
+* Test that ssh - as root - works from the controller node to the worker node by running ``sudo ssh worker -C hostname``. Make sure to accept the host key for the worker node
 * Clone ordersage onto the controller node with `git clone https://github.com/ordersage/ordersage.git`
 * Follow the instructions for the particular experiment you are working to reproduce
 """
