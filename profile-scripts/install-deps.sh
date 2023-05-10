@@ -16,7 +16,7 @@ fi
 
 # configure ordersage user if necessary
 if ! passwd -S -q ordersage; then
-    sudo useradd -m -u 13579 -d /home/ordersage ordersage
+    sudo useradd -m -u 13579 -d /home/ordersage -s /usr/bin/bash -G root ordersage
     sudo mkdir /home/ordersage/.ssh
     sudo sh -c 'geni-get key > /home/ordersage/.ssh/id_rsa'
     sudo chmod 600 /home/ordersage/.ssh/id_rsa
