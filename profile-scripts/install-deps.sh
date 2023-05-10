@@ -11,7 +11,7 @@ sudo apt install -y xmlstarlet
 geni-get portalmanifest | xmlstarlet sel -N x="http://www.geni.net/resources/rspec/3" -t -v "//x:node[@client_id='worker']/@component_id" | cut -d + -f 4 > /tmp/worker-node
 
 if ! grep -q worker /etc/hosts; then
-    echo "$(host $(cat /tmp/worker-node) | grep -o -E '[0-9.]+$') worker" >> /etc/hosts
+    echo "$(host $(cat /tmp/worker-node) | grep -o -E '[0-9.]+$') worker" | sudo sh -c 'cat >> /etc/hosts'
 fi
 
 # configure ordersage user if necessary
