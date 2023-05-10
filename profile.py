@@ -27,7 +27,7 @@ import geni.rspec.emulab
 pc = portal.Context()
 
 DISKIMAGE = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD"
-SCRIPT = "/local/repository/install-deps.sh"
+SCRIPT = "/local/repository/profile-scripts/install-deps.sh"
 
 # We force both nodes to be at Utah in this profile; the worker node types
 # require that site, so we make sure the controller is there too 
