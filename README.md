@@ -38,6 +38,14 @@ https://github.com/ordersage/ordersage
 
 This repository contains the code for OrderSage, our tool for identifying order-dependent performance effects in systems benchmarks. This is a stand-alone project that can be applied to systems benchmarking tasks on its own; in this document, it is used to run experiments the Case Studies.
 
+#### OrderSage Profile on CloudLab
+
+https://www.cloudlab.us/p/ordersage/paper-artifact
+
+This link allows anyone with a CloudLab account to quickly get an environment suitable for running OrderSage; it requests one node to be the ordersage controller and another to be the worker. It also installs some dependencies and sets up a few convenience options to make the process smooth.
+
+All code and data for this profile is actually contained in the same repository as this README; see `profile.py` in this repository for the profile definition.
+
 #### Long-term CloudLab Performance Dataset
 
 https://zenodo.org/record/7903144 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7903144.svg)](https://doi.org/10.5281/zenodo.7903144)
@@ -124,13 +132,13 @@ be highly dependent on hardware, operating system, and other software
 differences (as described in the paper), we would not necessarily expect to get
 similar results in a different environment.
 
-Our CloudLab profile is available at https://XXX
+Our CloudLab profile is available at https://www.cloudlab.us/p/ordersage/paper-artifact
 
 To run experiments for each table, you will:
 
 * Instantiate the profile
 * Log in to the "controller" node via ssh
-* Clone the OrderSage profile via `git clone https://XXX`
+* Clone the OrderSage profile via `git clone https://github.com/ordersage/ordersage`
 * `cd` into the OrderSage directory (`cd ordersage`)
 * Copy the configuration file for the experiment you will run (XXX describe)
 * Run the experiment (XXX describe): **Important: this step can take more than 24 hours, depending on the experiment**
