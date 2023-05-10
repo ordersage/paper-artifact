@@ -120,7 +120,7 @@ from:
 
 Data for the tables can be found in the files:
 
-* Table 3: XXX
+* Table 3: `20211012_21:02:01_results/20211012_21:02:01_node_stats.csv`
 * Table 4: `npbench_and_npb_results/20221005_12_13_03_node_stats.csv`
 * Table 5: `20221012_19:59:50_results/20221012_19:59:50_node_stats.csv`
 

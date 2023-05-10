@@ -1,0 +1,2 @@
+SW_num_not_normal_fixed,SW_number_normal_fixed,Fraction_not_normal_fixed,SW_num_not_normal_random,SW_number_normal_random,Fraction_not_normal_random,fixed_greater_count,fixed_Median,fixed_10th,fixed_90th,random_greater_count,random_Median,random_10th,random_90th
+1.0,2.0,0.3333333333333333,0.0,3.0,0.0,1.0,5.258952170305368,5.258952170305368,5.258952170305368,0.0,,,
