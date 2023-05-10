@@ -38,6 +38,14 @@ https://github.com/ordersage/ordersage
 
 This repository contains the code for OrderSage, our tool for identifying order-dependent performance effects in systems benchmarks. This is a stand-alone project that can be applied to systems benchmarking tasks on its own; in this document, it is used to run experiments the Case Studies.
 
+#### OrderSage Profile on CloudLab
+
+https://www.cloudlab.us/p/ordersage/paper-artifact
+
+This link allows anyone with a CloudLab account to quickly get an environment suitable for running OrderSage; it requests one node to be the ordersage controller and another to be the worker. It also installs some dependencies and sets up a few convenience options to make the process smooth.
+
+All code and data for this profile is actually contained in the same repository as this README; see `profile.py` in this repository for the profile definition.
+
 #### Long-term CloudLab Performance Dataset
 
 https://zenodo.org/record/7903144 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7903144.svg)](https://doi.org/10.5281/zenodo.7903144)
@@ -48,14 +56,14 @@ This dataset was collected over a period of more than nine months on CloudLab, a
 
 This section is organized according to the figures and tables in the paper.
 
-
 ### Table 1:
 
-**Requirements: None**
+**Requirements: Software to read `.xslx` files**
 
 This table was produced from our survey of artifacts and evaluations as
 described in Section 2 of the paper. This data was tablulated from a
-spreadsheet that can be found at https://XXX
+spreadsheet that can be found in this repository in
+`ExperimentOrder-Survey-Spreadsheet-Artifact.xlsx`
 
 ### Figures 2--6 and Table 2:
 
@@ -86,32 +94,33 @@ re-running the experiments and collecting your own data.
 
 #### Checking against our data
 
-**Requirements: none**
+**Requirements: software to read `.csv` files**
 
 The data collected in the experiments described in Section 7 of the paper can
-be found in the XXX/ subdirectory of this repository. Each directory contains
-files describing the configuration of OrderSage, the environments gathered from
-the node(s) the experiments were run on. The data used to produce the tables
-came from:
+be found in subdirectories of this repository. Each directory contains files
+describing the configuration of OrderSage, the environments gathered from the
+node(s) the experiments were run on. The data used to produce the tables came
+from:
 
-* Test name: file XXX, column YYY
-* KW p-value: file XXX, column YYY
-* KW test: file XXX, column YYY
-* \delta %: file XXX, column YYY
-* CI case: file XXX, column YYY
+* Test name: column `test_command`
+* KW p-value: cloumn `KW_p-value`
+* KW test: column `kw_dist_type`
+* \delta %: column `percent_diff`
+* CI case: column `ci_case`
 
-Other points of interest in these directories include:
-
-* Make a
-* list of some
-* other things
-* they may find interesting
-
-Data for the tables can be found in the directories:
+Data for the tables can be found in the files:
 
 * Table 3: XXX
-* Table 4: XXX
-* Table 5: XXX
+* Table 4: `npbench_and_npb_results/20221005_12_13_03_node_stats.csv`
+* Table 5: `20221012_19:59:50_results/20221012_19:59:50_node_stats.csv`
+
+Other files of interest in the data directories include:
+
+* `*_all_env_out.csv`: information about the worker the tests were run on
+* `*_all_test_results.csv`: raw results from all individual tests
+* `*_stats_summary.csv`: summary statistics regarding normality, etc.
+
+Several other data directories are included; these were from experiments that were cut from the final paper.
 
 #### Re-running experiments on CloudLab
 
@@ -124,13 +133,13 @@ be highly dependent on hardware, operating system, and other software
 differences (as described in the paper), we would not necessarily expect to get
 similar results in a different environment.
 
-Our CloudLab profile is available at https://XXX
+Our CloudLab profile is available at https://www.cloudlab.us/p/ordersage/paper-artifact
 
 To run experiments for each table, you will:
 
 * Instantiate the profile
 * Log in to the "controller" node via ssh
-* Clone the OrderSage profile via `git clone https://XXX`
+* Clone the OrderSage profile via `git clone https://github.com/ordersage/ordersage`
 * `cd` into the OrderSage directory (`cd ordersage`)
 * Copy the configuration file for the experiment you will run (XXX describe)
 * Run the experiment (XXX describe): **Important: this step can take more than 24 hours, depending on the experiment**
