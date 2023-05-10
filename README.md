@@ -48,14 +48,14 @@ This dataset was collected over a period of more than nine months on CloudLab, a
 
 This section is organized according to the figures and tables in the paper.
 
-
 ### Table 1:
 
-**Requirements: None**
+**Requirements: Software to read `.xslx` files**
 
 This table was produced from our survey of artifacts and evaluations as
 described in Section 2 of the paper. This data was tablulated from a
-spreadsheet that can be found at https://XXX
+spreadsheet that can be found in this repository in
+`ExperimentOrder-Survey-Spreadsheet-Artifact.xlsx`
 
 ### Figures 2--6 and Table 2:
 
