@@ -60,7 +60,7 @@ We note that this is a large file; it is 162 MB compressed, and 8.3 GB decompres
 
 https://colab.research.google.com/drive/1JSgLaILACBGWKQW4X0I6xxFgwpe4-yuN 
 
-The data from our long-term dataset is analyzed with a Jupyter notebook. The main copy of this notebook is stored in this repository as XXX. For convenience, we have a copy of the notebook available on Google Collab at the above URL so that the evaluator does not need to have their own instance of Jupyter.
+The data from our long-term dataset is analyzed with a Jupyter notebook. The main copy of this notebook is stored in this repository as `Analysis_of_long_term_CloudLab_dataset.ipynb`. For convenience, we have a copy of the notebook available on Google Collab at the above URL so that the evaluator does not need to have their own instance of Jupyter.
  
 ## Reproducing The Paper
 
@@ -86,7 +86,8 @@ The figures can be reproduced from the dataset using the Jupyter notebook that
 can be found at
 https://colab.research.google.com/drive/1JSgLaILACBGWKQW4X0I6xxFgwpe4-yuN . You
 can either run this notebook "in place" on Google Collab, or run the notebook
-checked into this repository as XXX in your own installation of Jupyter.
+checked into this repository as `Analysis_of_long_term_CloudLab_dataset.ipynb`
+in your own installation of Jupyter.
 
 Instructions for running the notebook in Google Collab can be found at the top
 of the document.
