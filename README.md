@@ -151,8 +151,6 @@ To run experiments for each table, you will:
 * Instantiate the profile
 * Log in to the "controller" node via ssh
 * Clone the OrderSage profile via `git clone https://github.com/ordersage/ordersage`
-* Prepare any experiment-specific software as necessary:
-  * for the `memcached` experiments, run `ssh -i /local/id_rsa ordersage@worker git clone https://gitlab.flux.utah.edu/gtw/memcached_testapp`
 * `cd` into the OrderSage directory (`cd ordersage`)
 * Copy the configuration file for the experiment you will run:
   * for the `memcached` experiments, you can `wget https://gitlab.flux.utah.edu/gtw/memcached_testapp/-/raw/main/config.py`
