@@ -185,11 +185,13 @@ Specific instructions for:
 * Table 4:
   * When instantiating the profile, leave the value for "Worker hardware type" at its default (`xl170`) 
   * The experiment repository is https://gitlab.flux.utah.edu/hamzalsh/test-experiments
-  * To get the configuration file: `wget XXX:`
+  * To get the configuration file: `mv -n config.py config.py.orig && wget https://gitlab.flux.utah.edu/hamzalsh/test-experiments/-/raw/master/config.py`
+
 * Table 5:
   * When instantiating the profile, *change* the value for "Worker hardware type" to `6525-100g`, because this experiment requires different hardware
   * The experiment repository is https://gitlab.flux.utah.edu/ptflx/ufs-test-experiments
-  * To get the configuration file: `wget XXX:`
+  * To get the configuration file:`mv -n config.py config.py.orig && wget https://gitlab.flux.utah.edu/ptflx/ufs-test-experiments/-/raw/main/config.py`
+
 
 Each of these experiment repositories contains additional code and scripts that
 are used to run the experiments; OrderSage automatically clones them on the worker
