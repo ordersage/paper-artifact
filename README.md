@@ -167,26 +167,29 @@ Our CloudLab profile is available at https://www.cloudlab.us/p/ordersage/paper-a
 To run experiments for each table, you will:
 
 * Instantiate the profile
-* Log in to the "controller" node via ssh
+* *Wait for startup services to finish running*: The CloudLab user interface will first report that all nodes are booted, but the scripts installing dependencies may be running. ("State: booted (startup services are still running)" in the experiment status page). Wait until the status page reports "State: Ready". This may take a few minutes.
+* Log in to the "controller" node via `ssh`
 * Clone the OrderSage profile via `git clone https://github.com/ordersage/ordersage`
 * `cd` into the OrderSage directory (`cd ordersage`)
-* Copy the configuration file for the experiment you will run:
-  * for the `memcached` experiments, you can `wget https://gitlab.flux.utah.edu/gtw/memcached_testapp/-/raw/main/config.py`
-* Run the experiment (`python controller.py`): **Important: this step can take more than 24 hours, depending on the experiment**
-* Interpret the results in `XXX/` as described in the "checking against our data" section of this document
+* Download the configuration file for the experiment you will run; the specific repositories and command lines can be found in the list below. Run the `wget` command for the experiment you are running.
+* Run the experiment (`python controller.py`): **Important: this step can take more than 24 hours, depending on the experiment** . You may want to run this step inside of `screen` or `tmux` to make the experiment resilient to your client disconnecting.
+* Results will be placed in a subdirectory with a timestamp in the name. Interpret the results in ``*_results/*node_stats.csv`` as described in the "checking against our data" section of this document
 * Terminate your CloudLab experiment
 
-Special instructions for:
+Specific instructions for:
 
 * Table 3:
   * When instantiating the profile, leave the value for "Worker hardware type" at its default (`xl170`) 
   * The experiment repository is https://gitlab.flux.utah.edu/gtw/memcached_testapp
+  * To get the configuration file `wget https://gitlab.flux.utah.edu/gtw/memcached_testapp/-/raw/main/config.py`
 * Table 4:
   * When instantiating the profile, leave the value for "Worker hardware type" at its default (`xl170`) 
   * The experiment repository is https://gitlab.flux.utah.edu/hamzalsh/test-experiments
+  * To get the configuration file: `wget XXX:`
 * Table 5:
   * When instantiating the profile, *change* the value for "Worker hardware type" to `6525-100g`, because this experiment requires different hardware
   * The experiment repository is https://gitlab.flux.utah.edu/ptflx/ufs-test-experiments
+  * To get the configuration file: `wget XXX:`
 
 We note that you are *not* expected to get results that are *identical* to the
 ones we reported in the paper; there is enough randomness in this process that
