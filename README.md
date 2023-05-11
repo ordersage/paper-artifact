@@ -14,7 +14,7 @@ Checking the numbers is generally simple, and can be done by examining data
 presented in this repository and examining a Jupyter notebook that we provide.
 This Jupyter nodebook can be re-executed either by using the evaluator's own
 installation of Jupyter or by running it using a link we provide to Google
-Collab, which only requires a Google account.
+Colab, which only requires a Google account.
 
 Re-executing the Case Study experiments is considerably more involved. The
 preferred way to do this is to have a CloudLab account; we provide a profile on
@@ -38,7 +38,7 @@ places. We begin by listing all of them here.
 
 Directories with `*_results` in the name contain data files from the case studies, as well as other experiments we ran that were not included in the paper. The key files in these directories are described below.
 
-`Analysis_of_long_term_CloudLab_dataset.ipynb` is the Jupyter notebook used to analyze our long-term dataset; the dataset, and an alternative way to run the notebook on Google Collab are described below.
+`Analysis_of_long_term_CloudLab_dataset.ipynb` is the Jupyter notebook used to analyze our long-term dataset; the dataset, and an alternative way to run the notebook on Google Colab are described below.
 
 `ExperimentOrder-Survey-Spreadsheet-Artifact.xlsx` is the spreadsheet used for our literature and artifact survey.
 
@@ -66,11 +66,11 @@ This dataset was collected over a period of more than nine months on CloudLab, a
 
 We note that this is a large file; it is 162 MB compressed, and 8.3 GB decompressed.
 
-#### Google Collab Version of Our Jupyter Notebook
+#### Google Colab Version of Our Jupyter Notebook
 
 https://colab.research.google.com/drive/1JSgLaILACBGWKQW4X0I6xxFgwpe4-yuN 
 
-The data from our long-term dataset is analyzed with a Jupyter notebook. The main copy of this notebook is stored in this repository as `Analysis_of_long_term_CloudLab_dataset.ipynb`. For convenience, we have a copy of the notebook available on Google Collab at the above URL so that the evaluator does not need to have their own instance of Jupyter.
+The data from our long-term dataset is analyzed with a Jupyter notebook. The main copy of this notebook is stored in this repository as `Analysis_of_long_term_CloudLab_dataset.ipynb`. For convenience, we have a copy of the notebook available on Google Colab at the above URL so that the evaluator does not need to have their own instance of Jupyter.
 
 ### Experiment Repositories For OrderSage Case Studies
 
@@ -103,11 +103,11 @@ paper. The dataset itself is available at https://zenodo.org/record/7903144
 The figures can be reproduced from the dataset using the Jupyter notebook that
 can be found at
 https://colab.research.google.com/drive/1JSgLaILACBGWKQW4X0I6xxFgwpe4-yuN . You
-can either run this notebook "in place" on Google Collab, or run the notebook
+can either run this notebook "in place" on Google Colab, or run the notebook
 checked into this repository as `Analysis_of_long_term_CloudLab_dataset.ipynb`
 in your own installation of Jupyter.
 
-Instructions for running the notebook in Google Collab can be found at the top
+Instructions for running the notebook in Google Colab can be found at the top
 of the document.
 
 * Figures 2-4 are labeled in the titles of the plots under the heading "Visualizations for the paper"
@@ -134,7 +134,7 @@ from:
 * Test name: column `test_command`
 * KW p-value: cloumn `KW_p-value`
 * KW test: column `kw_dist_type`
-* \delta %: column `percent_diff`
+* delta %: column `percent_diff`
 * CI case: column `ci_case`
 
 Data for the tables can be found in the files:
