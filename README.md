@@ -71,6 +71,14 @@ We note that this is a large file; it is 162 MB compressed, and 8.3 GB decompres
 https://colab.research.google.com/drive/1JSgLaILACBGWKQW4X0I6xxFgwpe4-yuN 
 
 The data from our long-term dataset is analyzed with a Jupyter notebook. The main copy of this notebook is stored in this repository as `Analysis_of_long_term_CloudLab_dataset.ipynb`. For convenience, we have a copy of the notebook available on Google Collab at the above URL so that the evaluator does not need to have their own instance of Jupyter.
+
+### Experiment Repositories For OrderSage Case Studies
+
+* https://gitlab.flux.utah.edu/gtw/memcached_testapp
+* https://gitlab.flux.utah.edu/hamzalsh/test-experiments
+* https://gitlab.flux.utah.edu/ptflx/ufs-test-experiments
+
+These repositories contain the OrderSage configurations for our case studies, as well as additional scripts that wrap individual tests and runs. The use of these repositories is described later.
  
 ## Reproducing The Paper
 
