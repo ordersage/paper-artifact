@@ -34,6 +34,16 @@ CloudLab is free for academic use, and can be found at https://cloudlab.us
 This README refers to code, data, and other resources located in several
 places. We begin by listing all of them here.
 
+#### Files In This Repository
+
+Directories with `*_results` in the name contain data files from the case studies, as well as other experiments we ran that were not included in the paper. The key files in these directories are described below.
+
+`Analysis_of_long_term_CloudLab_dataset.ipynb` is the Jupyter notebook used to analyze our long-term dataset; the dataset, and an alternative way to run the notebook on Google Collab are described below.
+
+`ExperimentOrder-Survey-Spreadsheet-Artifact.xlsx` is the spreadsheet used for our literature and artifact survey.
+
+`profile.py` is the definition of our CloudLab profile, whose use is documented below. `profile-scripts` contains scripts used by this profile.
+
 #### OrderSage Code
 
 https://github.com/ordersage/ordersage
