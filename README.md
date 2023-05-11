@@ -191,6 +191,11 @@ Specific instructions for:
   * The experiment repository is https://gitlab.flux.utah.edu/ptflx/ufs-test-experiments
   * To get the configuration file: `wget XXX:`
 
+Each of these experiment repositories contains additional code and scripts that
+are used to run the experiments; OrderSage automatically clones them on the worker
+node, but if you wish to examine them, you can visit the URL and/or clone them 
+yourself.
+
 We note that you are *not* expected to get results that are *identical* to the
 ones we reported in the paper; there is enough randomness in this process that
 results are not identical every time (which is indeed the main point of the
