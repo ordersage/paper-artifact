@@ -181,7 +181,7 @@ Specific instructions for:
 * Table 3:
   * When instantiating the profile, leave the value for "Worker hardware type" at its default (`xl170`) 
   * The experiment repository is https://gitlab.flux.utah.edu/gtw/memcached_testapp
-  * To get the configuration file `wget https://gitlab.flux.utah.edu/gtw/memcached_testapp/-/raw/main/config.py`
+  * To get the configuration file `mv -n config.py config.py.orig && wget https://gitlab.flux.utah.edu/gtw/memcached_testapp/-/raw/main/config.py`
 * Table 4:
   * When instantiating the profile, leave the value for "Worker hardware type" at its default (`xl170`) 
   * The experiment repository is https://gitlab.flux.utah.edu/hamzalsh/test-experiments
