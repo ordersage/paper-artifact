@@ -181,11 +181,11 @@ Specific instructions for:
 * Table 3:
   * When instantiating the profile, leave the value for "Worker hardware type" at its default (`xl170`) 
   * The experiment repository is https://gitlab.flux.utah.edu/gtw/memcached_testapp
-  * To get the configuration file `mv -n config.py config.py.orig && wget https://gitlab.flux.utah.edu/gtw/memcached_testapp/-/raw/main/config.py`
+  * To get the configuration file `mv -n config.py config.py.orig && wget https://gitlab.flux.utah.edu/gtw/memcached_testapp/-/raw/main/config.py`.  Please note the configuration of `n_runs` in this file (see the comments near line 30): a value of 3 should require under an hour of computation; increasing the number of iterations to 50 was used for the Table 3 results in the paper but requires ~24 hours to complete.
 * Table 4:
   * When instantiating the profile, leave the value for "Worker hardware type" at its default (`xl170`) 
   * The experiment repository is https://gitlab.flux.utah.edu/hamzalsh/test-experiments
-  * To get the configuration file: `mv -n config.py config.py.orig && wget https://gitlab.flux.utah.edu/hamzalsh/test-experiments/-/raw/master/config.py`.  Please note the configuration of `n_runs` in this file (see the comments near line 30): a value of 3 should require under an hour of computation; increasing the number of iterations to 50 was used for the Table 3 results in the paper but requires ~24 hours to complete.
+  * To get the configuration file: `mv -n config.py config.py.orig && wget https://gitlab.flux.utah.edu/hamzalsh/test-experiments/-/raw/master/config.py`.
 
 * Table 5:
   * When instantiating the profile, *change* the value for "Worker hardware type" to `6525-100g`, because this experiment requires different hardware
